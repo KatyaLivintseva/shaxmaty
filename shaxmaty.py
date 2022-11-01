@@ -79,7 +79,7 @@ while True:
                         logging.info(f'Пользователь выиграл поле {m, n} с двух ходов')
 
                 elif (figyra==1): #ферзь
-                    if (k-m==l-n or k==m or l==n or km==ln): #ходит в любом направлении
+                    if (k-m==l-n or m-k==l-n or m-k==n-l or k-m==n-l or k==m or l==n): #ходит в любом направлении
                         print('Ферзь угрожает полю', m,'и', n)
                         logging.info(f'Пользователь выиграл поле {m, n}')
                     else:
